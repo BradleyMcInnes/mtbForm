@@ -4,7 +4,7 @@
     
     <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
     
-    <main id="main">
+    <main id="main" class="container">
         
       <h1 id="title">Brad's MTB Survey</h1>
         
@@ -18,6 +18,7 @@
                type="text" 
                id="name"
                placeholder="Your name"
+               class="form-control"
                required>
           </div>
           
@@ -27,6 +28,7 @@
                type="email" 
                id="email" 
                placeholder="Your email"
+               class="form-control"
                required>
           </div>
         
@@ -38,13 +40,14 @@
                placeholder="Your age"
                min="1"
                max="10"
+               class="form-control"
                required>
           </div>
         
           <div class="form-group">
               <label for="dropdown">What type of bike do you ride?</label>
           
-                <select name="dropdown" id="dropdown">
+                <select name="dropdown" id="dropdown" class="form-control">
                   <option value="hardtail">Hardtail</option>
                   <option value="enduro">Enduro</option>
                   <option value="dh">Downhill</option>
@@ -54,10 +57,10 @@
           <div class="form-group">
             <p>Do you race?</p>
             <label for="yes">Yes</label> 
-            <input type="radio" id="yes" name="race" value="yes">
+            <input type="radio" id="yes" name="race" value="yes" class="input-radio">
             
             <label for="no">No</label>
-            <input type="radio" id="no" name="race" value="no">
+            <input type="radio" id="no" name="race" value="no" class="input-radio">
           </div>
          
           <div class="form-group">
@@ -78,7 +81,9 @@
                 <textarea
                     id="comments"
                     name="comment"
-                    placeholder="Enter your comment here">
+                    placeholder="Enter your comment here"
+                    class="text-area">
+                    
                 </textarea>
                 <button type="submit" id="submit">Submit</button>
           </div>
